@@ -1,6 +1,7 @@
 package pl.applover.piotrekzadanie;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     int wznowienia;
     static final String RESUME_COUNTER_KEY = "WZNOWIENIA_KLUCZ";
     static final ArrayList<Integer> al = new ArrayList<>();
+    Uri uriUrl = Uri.parse("http://stackoverflow.com/");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,15 @@ public class MainActivity extends AppCompatActivity {
         final RadioGroup myRadioGroup = findViewById(R.id.myRadioGroup);
         final RadioButton redRadial = findViewById(R.id.redRadial);
         final RadioButton greenRadial = findViewById(R.id.greenRadial);
-
+        final TextView linkTextView = findViewById(R.id.linkContainerTextView);
+        linkTextView.setOnClickListener(new View.OnClickListener() {  // ista 3 zad 3
+            @Override
+            public void onClick(View v) {
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                startActivity(launchBrowser);
+            }
+        });
+//lista 3 zad 3 koniec
         mySecondBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

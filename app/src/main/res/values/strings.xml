@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">ListaZadan2</string>
+    <string name="app_name">POMI_ListaZadan_2</string>
     <string name="start_counter">Start Counter</string>
     <string name="title_activity_second_screen">SecondScreenActivity</string>
     <string name="title_activity_third_screen">ThirdScreenActivity</string>
+    <string name = "linkContainer">Take me to StackOverflow</string>
+    <string name ="button_takeMeToNextScreenActivity">Take me to a screen of different color</string>
 </resources>

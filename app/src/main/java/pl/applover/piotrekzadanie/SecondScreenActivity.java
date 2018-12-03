@@ -14,5 +14,4 @@ public class SecondScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_screen);
     }
-
 }
